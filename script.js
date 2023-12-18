@@ -39,7 +39,7 @@ function sendMessage() {
                           </div>`;
 
 // Send message to Flask server
-fetch('http://localhost:5000/chat', {
+fetch('https://replit.com:5000/@iKingRPG/sharkchatbackend/chat', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
