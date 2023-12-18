@@ -1,0 +1,142 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #091a28;
+  color: #ffffff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+#chat-container {
+  width: 60%;
+  max-width: 800px;
+  height: 80vh;
+  background-color: #303b45;
+  border: 1px solid #4a9eda;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+#chat-box {
+  padding: 20px;
+  overflow-y: auto;
+  background-color: #28323d;
+  display: flex;
+  flex-direction: column;
+}
+
+#message-input-area {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+#user-input {
+  padding: 15px;
+  border: 1px solid #4a9eda;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  margin-right: 10px;
+  width: 60%;
+}
+
+#send-button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1e81b0;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#send-button:hover {
+  background-color: #106ba3;
+}
+
+#password {
+  width: 30%;
+  margin: 10px auto;
+  padding: 5px;
+  border: 1px solid #4a9eda;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  display: block;
+}
+
+button {
+  padding: 15px 20px;
+  margin: 10px 0;
+  background-color: #1e81b0;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #106ba3;
+}
+
+#chat-header {
+  padding: 20px;
+  background-color: #303b45;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#toggle-theme {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+#scroll-to-bottom {
+  display: none;
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 2em;
+  color: #4a9eda;
+  cursor: pointer;
+}
+
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.light-mode {
+  background-color: #f4f4f4;
+  color: black;
+}
+
+.light-mode #chat-container {
+  background-color: #F0F0F0;
+}
+
+.light-mode #chat-header {
+  background-color: #FFFFFF;
+}
+
+.light-mode #chat-box {
+  background-color: #f0f0f0;
+}
+
+.light-mode #user-input, .light-mode #password, .light-mode button {
+  background-color: #FFFFFF;
+  color: #000000;
+}
+
+.light-mode button {
+  background-color: #DDDD
